@@ -1,0 +1,27 @@
+Coolguy gives you a simple problem. Given a -indexed array, , containing  elements, what will  be after this pseudocode is implemented and executed? Print .
+
+//f(a, b) is a function that returns the minimum element in interval [a, b]
+
+ans = 0
+
+for a -> [1, n]
+    for b -> [a, n]
+        for c -> [b + 1, n]
+            for d -> [c, n]
+                ans = ans + min(f(a, b), f(c, d))
+Input Format
+
+The first line contains  (the size of array ).
+The second line contains  space-separated integers.
+
+Output Format
+
+Print the integer result of .
+
+Sample Input
+
+3
+3 2 1
+Sample Output
+
+6
