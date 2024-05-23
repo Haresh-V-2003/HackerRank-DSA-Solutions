@@ -1,0 +1,39 @@
+Daniel loves graphs. He thinks a graph is special if it has the following properties:
+
+It is undirected.
+The length of each edge is .
+It includes exactly  different lovely triplets.
+A triplet is a set of  different nodes. A triplet is lovely if the minimum distance between each pair of nodes in the triplet is exactly . Two triplets are different if  or more of their component nodes are different.
+
+Given  and , help Daniel draw a special graph.
+
+Input Format
+
+A single line containing  space-separated integers,  (the number of different lovely triplets you must have in your graph) and  (the required distance between each pair of nodes in a lovely triplet), respectively.
+
+Constraints
+
+Output Format
+
+For the first line, print  space-separated integers,  (the number of nodes in the graph) and  (the number of edges in the graph), respectively.
+On each line  of the  subsequent lines, print two space-separated integers,  and , describing an edge between nodes  and .
+
+Your output must satisfy the following conditions:
+
+
+
+If there is more than one correct answer, print any one of them.
+
+Sample Input
+
+3 2
+Sample Output
+
+7 7
+1 2
+2 3
+3 4
+4 5
+5 6
+6 1
+1 7
