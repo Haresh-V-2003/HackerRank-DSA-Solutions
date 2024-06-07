@@ -39,7 +39,6 @@ Constraints
 
 Sample Input 1
 
-CopyDownload
 Undirected Weighed Graph: g
 1
 2
@@ -73,7 +72,6 @@ For the second path, Jack pays  units to reach station  from station . To go fro
 
 Sample Input 2
 
-CopyDownload
 Undirected Weighed Graph: g
 1
 2
