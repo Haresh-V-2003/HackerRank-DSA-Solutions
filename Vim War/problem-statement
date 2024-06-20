@@ -1,0 +1,31 @@
+A war has broken down between Vim and Emacs. Gedit, being Vim's ally, is captured by Emacs as a prisoner of war and it is up to Vim to rescue him by defeating Emacs.
+
+For this task, Vim has to assemble an army of appropriate skills. He can choose a non-empty subset of soldiers from a set of  soldiers (numbered from  to ). Each soldier has some subset of skills out of  different skills (numbered from  to ). The skill-set of an army is the union of skill-sets of its constituent soldiers. To win the war, Vim needs to know how many different subsets of soldiers satisfy his skill-set requirement. Since the answer can be huge, print it modulo .
+
+Note : The chosen army's skill-set must exactly match the skill-set requirement of Vim (i.e no extra skills must be present in the army's skill-set than what is required).
+
+Input Format
+
+The first line contains  and , the number of soldiers to choose from and the number of different skills possible respectively.
+The next  lines contain  boolean characters each. If the  character of the  line is , then the  soldier possess the  skill and if it is , then not.
+The last line contains  boolean characters denoting the requirement skill-set of Vim where the  character being  signifies that Vim wants the  skill to be present in his final army and not, otherwise.
+
+Constraints
+
+
+
+Output Format
+
+Output in a single line the required answer, as explained above.
+
+Sample Input
+
+4 2  
+00  
+10  
+01  
+11  
+11  
+Sample Output
+
+10
