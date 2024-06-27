@@ -1,0 +1,43 @@
+You have a rooted tree with  vertices numbered from  through  where the root is vertex .
+
+You are given  triplets, the  triplet is denoted by three integers . The  triplet represents a simple path in the tree with endpoints in  and  such that  is ancestor of . The cost of the path is .
+
+You have to select a subset of the paths such that the sum of path costs is maximum and the  edge of the tree belongs to at most  paths from the subset. Print the sum as the output.
+
+Input Format
+
+The first line contains a single integer, , denoting the number of testcases. Each testcase is defined as follows:
+
+The first line contains two space-separated integers,  (the number of vertices) and  (the number of paths), respectively.
+Each line  of the  subsequent lines contains three space-separated integers describing the respective values of , , and  where (, ) is an edge in the tree and  is maximum number of paths which can include this edge.
+Each line of the  subsequent lines contains three space-separated integers describing the respective values of , , and  () that define the  path and its cost.
+Constraints
+
+Let  be the sum of  over all the trees.
+Let  be the sum of  over all the trees.
+Output Format
+
+You must print  lines, where each line contains a single integer denoting the answer for the corresponding testcase.
+
+Sample Input
+
+1
+8 8
+1 2 3
+1 3 1
+2 4 5
+2 5 1
+2 6 1
+3 7 2
+4 8 1
+1 2 3
+2 8 5
+1 8 7
+1 5 8
+1 6 10
+3 7 5
+1 7 6
+1 7 6
+Sample Output
+
+37
