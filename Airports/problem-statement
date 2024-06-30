@@ -1,0 +1,43 @@
+Airports are being built on a straight road according to a new construction plan. For convenience, imagine a number line on which at different points airports can be positioned. Because a plane can't take off and start landing immediately, there will be flight between two airports in locations  and  if and only if , where  is a constant.
+
+Changing the position of an airport from  to  costs . The cost to fix a certain plan is the minimum total cost of changing the positions of airports. After the changes, it should be possible to travel between any pair of airports, possibly taking flights through some intermediate airports. Note that it's possible that two airports have the same initial position, and this can be the case after changes too.
+
+On  day, a plan to build a new airport with position  is announced. On each day that a new airport is announced, print the smallest cost to fix the set of airports announced so far . Note that you should not change the positions of any airports, just calculate the cost to do it.
+
+image
+
+Input Format
+
+Input contains multiple queries.
+The first line consists of an integer  which is the number of queries. Each query is given as follows.
+The first line of each query contains two integers  and , the number of days, and the minimum distance respectively.
+The second line of each test case contains  space-separated integers  denoting the position of the airport that was announced on  day.
+
+Constraints
+
+the sum of  over all test cases in a file will not exceed 
+Output Format
+
+Print one line for each query.
+A line for a query with  airports should have  numbers on it where the  one should be the minimum cost to fix airports in positions .
+
+Sample Input 0
+
+1
+3 1
+0 0 0
+Sample Output 0
+
+0 1 1
+Explanation 0
+
+The answer for a single airport is always zero. When we have many airports in the same position, it's enough to move only one of them to satisfy the condition from the statement.
+
+Sample Input 1
+
+1
+5 4
+1 -1 2 -1 1
+Sample Output 1
+
+0 2 2 3 3
