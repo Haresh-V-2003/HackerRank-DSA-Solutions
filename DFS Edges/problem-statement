@@ -1,0 +1,63 @@
+Let  be a connected, directed graph with vertices numbered from  to  such that any vertex is reachable from vertex . In addition, any two distinct vertices,  and , are connected by at most one edge .
+
+Consider the standard DFS (Depth-First Search) algorithm starting from vertex . As every vertex is reachable, each edge  of  is classified by the algorithm into one of four groups:
+
+tree edge: If  was discovered for the first time when we traversed .
+back edge: If  was already on the stack when we tried to traverse .
+forward edge: If  was already discovered while  was on the stack.
+cross edge: Any edge that is not a tree, back, or forward edge.
+To better understand this, consider the following C++ pseudocode:
+
+// initially false
+bool discovered[n]; 
+
+// initially false
+bool finished[n];   
+
+vector<int> g[n];
+
+void dfs(int u) {
+    // u is on the stack now
+    discovered[u] = true;
+    for (int v: g[u]) {
+        if (finished[v]) {
+            // forward edge if u was on the stack when v was discovered
+            // cross edge otherwise
+            continue;
+        }
+        if (discovered[v]) {
+            // back edge
+            continue;
+        }
+        // tree edge
+        dfs(v);
+    }
+    finished[u] = true;
+    // u is no longer on the stack
+}
+Given four integers, , , , and , construct any graph  having exactly  tree edges, exactly  back edges, exactly  forward edges, and exactly  cross edges. Then print  according to the Output Format specified below.
+
+Input Format
+
+A single line of four space-separated integers describing the respective values of , , , and .
+
+Constraints
+
+Output Format
+
+If there is no such graph , print -1; otherwise print the following:
+
+The first line must contain an integer, , denoting the number of vertices in .
+Each line  of the  subsequent lines must contain the following space-separated integers:
+The first integer is the outdegree, , of vertex .
+This is followed by  distinct numbers, , denoting edges from  to  for . The order of each  should be the order in which a DFS considers edges.
+Sample Input 0
+
+3 1 1 1
+Sample Output 0
+
+4
+3 2 4 3
+1 3
+1 1
+1 2
