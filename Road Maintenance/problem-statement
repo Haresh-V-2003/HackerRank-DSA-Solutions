@@ -1,0 +1,26 @@
+Byteland has  cities (numbered from  to ) and  bidirectional roads. A path is comprised of  or more connected roads. It is guaranteed that there is a path from any city to any other city.
+
+Steven is a road maintenance worker in Byteland. He is required to maintain exactly  paths on any given workday. He cannot work on the same road twice in one day (so no  paths can contain the same  roads). Steven can start his workday in any city and, once he has finished maintaining a path, teleport to his next starting city.
+
+Given , help Steven determine how many different possible path sets will allow him to perform his maintenance duties. Then print the answer modulo .
+
+Input Format
+
+The first line contains  space-separated integers,  (the number of cities) and  (the number of roads to maintain).
+Each line  of the  subsequent lines contains  space-separated integers, , describing a bidirectional road between cities  and .
+
+Constraints
+
+Output Format
+
+Find the number of different path sets that will allow Steven to complete  orders, and print the answer .
+
+Sample Input
+
+4 2
+1 2
+2 3
+2 4
+Sample Output
+
+6
