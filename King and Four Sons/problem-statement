@@ -1,0 +1,32 @@
+The King of Byteland wants to grow his territory by conquering  other countries. To prepare his  heirs for the future, he decides they must work together to capture each country.
+
+The King has an army, , of  battalions; the  battalion has  soldiers. For each battle, the heirs get a detachment of soldiers to share but will fight amongst themselves and lose the battle if they don't each command the same number of soldiers (i.e.: the detachment must be divisible by ). If given a detachment of size , the heirs will fight alone without any help.
+
+The battalions chosen for battle must be selected in the following way:
+
+A subsequence of  battalions must be selected (from the  battalions in army ).
+The  battle will have a squad of soldiers from the  selected battalion such that its size is divisible by .
+The soldiers within a battalion have unique strengths. For a battalion of size , the detachment of soldiers  is different from the detachment of soldiers 
+
+The King tasks you with finding the number of ways of selecting  detachments of battalions to capture  countries using the criterion above. As this number may be quite large, print the answer modulo .
+
+Input Format
+
+The first line contains two space-separated integers,  (the number of battalions in the King's army) and  (the number of countries to conquer), respectively.
+
+The second line contains  space-separated integers describing the King's army, , where the  integer denotes the number of soldiers in the  battalion ().
+
+Constraints
+
+ holds for test cases worth at least  of the problem's score.
+Output Format
+
+Print the number of ways of selecting the  detachments of battalions modulo .
+
+Sample Input
+
+3 2
+3 4 5
+Sample Output
+
+20
