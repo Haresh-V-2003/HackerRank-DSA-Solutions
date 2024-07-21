@@ -1,3 +1,3 @@
 # HackerRank-DSA-Solutions
 
-This repository contains HackerRank solutions for Problem Solving in DSA. 
+This repository contains HackerRank solutions for Problem Solving in DSA using Java, Python, C and C++.
